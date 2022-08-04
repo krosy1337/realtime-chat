@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .container {
+        @apply max-w-6xl mx-auto px-2 h-full;
+    }
+
+    .btn {
+        @apply px-3 py-1.5 rounded-md text-black bg-white font-medium
+        hover:bg-sky-50 active:translate-y-0.5 transition-all;
+    }
+
+    .btn-primary {
+        @apply text-white bg-sky-600 hover:bg-sky-900 transition-all;
+    }
+
+    .textField {
+        @apply w-full h-12 outline-none bg-slate-200 rounded-sm drop-shadow-lg
+        border-0 py-3 px-2
+        focus:border-sky-800 focus:border-2 transition-colors;
+    }
+
+    .error {
+        @apply border-red-700 focus:border-red-700;
+    }
+}
